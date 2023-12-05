@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+  body 
+    h1 Hello World
+    p.text.
+        Lorem ipsum dolor, sit amet consectetur adipisic 
+    ul#list  
+      li x
+      li y
+      li z
+    input(type="password" name="password" data-js=`${5 > 2 ? "OK" : "NOT OK"}`)
+    
+    - const myClasses = ["class1", "class2", "class3"]
+    div(class=myClasses)
+
+    - const myStyles = {color: "red", background: "blue"}
+    div(style=myStyles)
+
+    - const myAttributes = {src: "myPhoto.png", alt: "Google"}
+    img&attributes(myAttributes)
+
+    input(type="text" disabled)
+
+    
