@@ -1,0 +1,14 @@
+doctype html 
+html  
+  head 
+    title Conditionals Pug 
+  body
+    h2 My Pug Page
+    - let user = {name: "Domenic", loggedIn:true, lastLogin: 6}
+    if user.loggedIn 
+      p 
+        | Welcome back 
+        strong #{user.name}! 
+    else 
+      a(href="/login") Login
+        
