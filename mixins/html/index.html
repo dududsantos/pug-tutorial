@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+<html>
+  <head> 
+    <title>Mixins in Pug </title>
+    <style>
+      .comment{
+        padding: 10px;
+        line-height: 1.5;
+        font-family: sans-serif;
+        border: 1px solid #555;
+        width: 250px;
+      }
+        .date{
+          font-size: 85%;
+          text-align: right;
+        }
+        .author{
+          font-weight: bold;
+          font-size:110%;
+        }
+       
+    </style>
+  </head>
+  <body>
+    <div class="comment">
+      <div class="date">2017-01-01</div>
+      <div class="author">John Doe</div>
+      <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+    </div>
+    <div class="comment">
+      <div class="date">2023-01-01</div>
+      <div class="author">Jane Doe</div>
+      <div class="text">testing multi mixins.</div>
+    </div>
+  </body>
+</html>

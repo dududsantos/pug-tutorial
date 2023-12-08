@@ -1,0 +1,30 @@
+mixin comment(date, author, text)
+  .comment
+    .date #{date}
+    .author #{author}
+    .text #{text}
+
+doctype html 
+html
+  head  
+    title Mixins in Pug 
+    style. 
+      .comment{
+        padding: 10px;
+        line-height: 1.5;
+        font-family: sans-serif;
+        border: 1px solid #555;
+        width: 250px;
+      }
+        .date{
+          font-size: 85%;
+          text-align: right;
+        }
+        .author{
+          font-weight: bold;
+          font-size:110%;
+        }
+       
+  body
+    +comment('2017-01-01', 'John Doe', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+    +comment('2023-01-01', 'Jane Doe', 'testing multi mixins.')
